@@ -1,6 +1,7 @@
 package com.example.javainterview;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,7 +18,7 @@ public class ControllerPerson {
     private RepositoryPerson repositoryPerson = PersonRepositoryFactory.getPerson();
 
     @RequestMapping(value = "/api/v1/person", method = RequestMethod.POST)
-    public Person getPerson(@RequestParam String id) {
-        return repositoryPerson.getById(Long.parseLong(id));
+    public Person getPerson(@RequestBody PersonRequest personRequest) {
+        return repositoryPerson.getById(Long.parseLong(personRequest.id));
     }
 }
