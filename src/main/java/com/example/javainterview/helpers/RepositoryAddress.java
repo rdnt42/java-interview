@@ -1,5 +1,6 @@
-package com.example.javainterview;
+package com.example.javainterview.helpers;
 
+import com.example.javainterview.entity.Address;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,26 +16,26 @@ import java.util.function.Function;
  * Created with IntelliJ IDEA.
  * User: marowak
  * Date: 22.06.2022
- * Time: 0:14
+ * Time: 23:06
  */
-public class RepositoryPerson implements JpaRepository<Person, Long> {
+public class RepositoryAddress implements JpaRepository<Address, Long> {
     @Override
-    public List<Person> findAll() {
+    public List<Address> findAll() {
         return null;
     }
 
     @Override
-    public List<Person> findAll(Sort sort) {
+    public List<Address> findAll(Sort sort) {
         return null;
     }
 
     @Override
-    public Page<Person> findAll(Pageable pageable) {
+    public Page<Address> findAll(Pageable pageable) {
         return null;
     }
 
     @Override
-    public List<Person> findAllById(Iterable<Long> longs) {
+    public List<Address> findAllById(Iterable<Long> longs) {
         return null;
     }
 
@@ -49,7 +50,7 @@ public class RepositoryPerson implements JpaRepository<Person, Long> {
     }
 
     @Override
-    public void delete(Person entity) {
+    public void delete(Address entity) {
 
     }
 
@@ -59,7 +60,7 @@ public class RepositoryPerson implements JpaRepository<Person, Long> {
     }
 
     @Override
-    public void deleteAll(Iterable<? extends Person> entities) {
+    public void deleteAll(Iterable<? extends Address> entities) {
 
     }
 
@@ -69,17 +70,17 @@ public class RepositoryPerson implements JpaRepository<Person, Long> {
     }
 
     @Override
-    public <S extends Person> S save(S entity) {
+    public <S extends Address> S save(S entity) {
         return null;
     }
 
     @Override
-    public <S extends Person> List<S> saveAll(Iterable<S> entities) {
+    public <S extends Address> List<S> saveAll(Iterable<S> entities) {
         return null;
     }
 
     @Override
-    public Optional<Person> findById(Long aLong) {
+    public Optional<Address> findById(Long aLong) {
         return Optional.empty();
     }
 
@@ -94,17 +95,17 @@ public class RepositoryPerson implements JpaRepository<Person, Long> {
     }
 
     @Override
-    public <S extends Person> S saveAndFlush(S entity) {
+    public <S extends Address> S saveAndFlush(S entity) {
         return null;
     }
 
     @Override
-    public <S extends Person> List<S> saveAllAndFlush(Iterable<S> entities) {
+    public <S extends Address> List<S> saveAllAndFlush(Iterable<S> entities) {
         return null;
     }
 
     @Override
-    public void deleteAllInBatch(Iterable<Person> entities) {
+    public void deleteAllInBatch(Iterable<Address> entities) {
 
     }
 
@@ -119,52 +120,52 @@ public class RepositoryPerson implements JpaRepository<Person, Long> {
     }
 
     @Override
-    public Person getOne(Long aLong) {
+    public Address getOne(Long aLong) {
         return null;
     }
 
     @Override
-    public Person getById(Long aLong) {
+    public Address getById(Long aLong) {
         return null;
     }
 
     @Override
-    public Person getReferenceById(Long aLong) {
+    public Address getReferenceById(Long aLong) {
         return null;
     }
 
     @Override
-    public <S extends Person> Optional<S> findOne(Example<S> example) {
+    public <S extends Address> Optional<S> findOne(Example<S> example) {
         return Optional.empty();
     }
 
     @Override
-    public <S extends Person> List<S> findAll(Example<S> example) {
+    public <S extends Address> List<S> findAll(Example<S> example) {
         return null;
     }
 
     @Override
-    public <S extends Person> List<S> findAll(Example<S> example, Sort sort) {
+    public <S extends Address> List<S> findAll(Example<S> example, Sort sort) {
         return null;
     }
 
     @Override
-    public <S extends Person> Page<S> findAll(Example<S> example, Pageable pageable) {
+    public <S extends Address> Page<S> findAll(Example<S> example, Pageable pageable) {
         return null;
     }
 
     @Override
-    public <S extends Person> long count(Example<S> example) {
+    public <S extends Address> long count(Example<S> example) {
         return 0;
     }
 
     @Override
-    public <S extends Person> boolean exists(Example<S> example) {
+    public <S extends Address> boolean exists(Example<S> example) {
         return false;
     }
 
     @Override
-    public <S extends Person, R> R findBy(Example<S> example, Function<FluentQuery.FetchableFluentQuery<S>, R> queryFunction) {
+    public <S extends Address, R> R findBy(Example<S> example, Function<FluentQuery.FetchableFluentQuery<S>, R> queryFunction) {
         return null;
     }
 }

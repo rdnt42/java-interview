@@ -1,4 +1,4 @@
-package com.example.javainterview;
+package com.example.javainterview.helpers;
 
 /**
  * Created with IntelliJ IDEA.
